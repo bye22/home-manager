@@ -1,0 +1,20 @@
+# 设置 fcitx5 环境变量
+export GTK_IM_MODULE=fcitx
+export QT_IM_MODULE=fcitx
+export XMODIFIERS="@im=fcitx"
+export LC_CTYPE="zh_CN.UTF-8"
+export SDL_IM_MODULE=fcitx
+export XIM=fcitx
+
+#feh --auto-zoom --bg-fill  "/home/bye22/下载/image-1734326272701-805.png" &
+
+#polybar -c $HOME/.config/polybar/config.ini &
+
+fcitx5 &
+#exec sxhkd -c $HOME/.config/bspwm/sxhkdrc
+#exec bspwm -c $HOME/.config/bspwm/bspwmrc
+
+#exec xmonad 
+#exec dwm
+bash ~/.config/arco-chadwm/scripts/run.sh
+exec chadwm
