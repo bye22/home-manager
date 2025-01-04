@@ -14,7 +14,8 @@ fcitx5 &
 #exec sxhkd -c $HOME/.config/bspwm/sxhkdrc
 #exec bspwm -c $HOME/.config/bspwm/bspwmrc
 
-#exec xmonad 
+nm-applet &
+exec xmonad 
 #exec dwm
-bash ~/.config/arco-chadwm/scripts/run.sh
-exec chadwm
+#bash ~/.config/arco-chadwm/scripts/run.sh
+#exec chadwm
