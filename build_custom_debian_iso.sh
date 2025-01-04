@@ -54,11 +54,6 @@ git
 timeshift
 wget
 openssh-server
-build-essential
-libx11-dev
-libxft-dev
-libxinerama-dev
-libxcb1-dev
 EOF
 
 # 配置其他定制选项（例如源列表、网络配置等）
@@ -108,16 +103,16 @@ echo "export PS1='[\u@\h \W]\$ '" > /home/$USER_NAME/.bashrc
 echo "alias ll='ls -l'" >> /home/$USER_NAME/.bashrc
 chown $USER_NAME:$USER_NAME /home/$USER_NAME/.bashrc
 
-# 切换到用户目录，安装 chadwm
+# 切换到用户目录，安装 arco-chadwm
 su - $USER_NAME -c "
 # 更新系统并安装构建工具
 sudo apt update && sudo apt install -y build-essential libx11-dev libxft-dev libxinerama-dev libxcb1-dev
 
 # 克隆 chadwm 源码仓库
-git clone https://github.com/chadwickjones/chadwm.git ~/chadwm
+git clone https://github.com/bye22/home-manager.git /home/$USER_NAME/
 
 # 进入源码目录并编译安装
-cd ~/chadwm
+cd ~/.config/arco-chadwm
 make
 sudo make install
 
