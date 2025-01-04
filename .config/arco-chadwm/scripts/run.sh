@@ -39,7 +39,6 @@ run "blueberry-tray"
 run "/usr/lib/xfce4/notifyd/xfce4-notifyd"
 run "/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1"
 picom -b  --config ~/.config/arco-chadwm/picom/picom.conf &
-#picom &
 run "numlockx on"
 run "volumeicon"
 #run "pa-applet"
@@ -47,15 +46,8 @@ sxhkd -c ~/.config/arco-chadwm/sxhkd/sxhkdrc &
 #run "nitrogen --restore"
 #run "conky -c $HOME/.config/arco-chadwm/conky/system-overview"
 #you can set wallpapers in themes as well
-#feh --bg-fill /usr/share/backgrounds/archlinux/arch-wallpaper.jpg &
-#feh --bg-fill /usr/share/backgrounds/arcolinux/arco-wallpaper.jpg &
 feh --bg-fill ~/wallpaper &
-#feh --bg-fill ~/.config/arco-chadwm/wallpaper/chadwm1.png &
 #feh --randomize --bg-fill /home/erik/Insync/Apps/Wallhaven/*
-
-
-#nitrogen --set-zoom-fill --random /home/erik/Insync/Apps/Desktoppr/ --head=0
-#nitrogen --set-zoom-fill --random /home/erik/Insync/Apps/Desktoppr/ --head=1
 
 #wallpaper for other Arch based systems
 #feh --bg-fill /usr/share/archlinux-tweak-tool/data/wallpaper/wallpaper.png &
@@ -68,7 +60,6 @@ feh --bg-fill ~/wallpaper &
 #run "telegram-desktop"
 #run "dropbox"
 #run "/usr/bin/octopi-notifier"
-
 
 #pkill bar.sh
 #~/.config/arco-chadwm/scripts/bar.sh &
