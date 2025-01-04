@@ -6,6 +6,7 @@
 build_custom_debian_iso.sh
 package_list.txt
 wallpaper.png
+README.md
 bin/
 .fonts/
 .config/alacritty/
